@@ -1,5 +1,5 @@
 === GitHub Gist Shortcode Plugin ===
-Contributors: paul1999
+Contributors: paul1999, sdepold
 Requires at least: 2.5.1
 Tested up to: 2.8
 Stable tag: trunk
@@ -13,9 +13,11 @@ Instead of embedding a [GitHub Gist](http://gist.github.com) (a [pastie](http://
 
 For example, to embed the [gist: 30948](http://gist.github.com/30948) enter this in a post or page:
 
-	[gist id=30948]
+	[gist id="30948"]
 
-It is that simple.
+It is that simple. Furthermore you can specify a file of a gist suite with:
+
+	[gist id="30948" filename="myfile.js"]
 
 One problem with gists is that a search engine spiders (and users with javascript disabled) will not see your code in a blog entry. This plugin allows you to get around this by including text, such as content of the gist inside the shortcode. The text is wrapped inside these tags:
 
